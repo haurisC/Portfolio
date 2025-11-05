@@ -9,7 +9,7 @@ export const TopHeader = () => {
     <header className="w-full bg-white border-b border-neutral-200">
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 md:px-6">
         <div className="flex items-center space-x-3">
-          <span className="font-bold text-lg text-primary">John Doe</span>
+          <span className="font-bold text-lg text-primary">Hauris Choudhry</span>
           <span className="text-sm text-secondary hidden md:inline">Developer</span>
         </div>
 

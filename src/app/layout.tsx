@@ -22,9 +22,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe - Developer",
+  title: "Hauris Choudhry - Developer",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Hauris Choudhry is a developer and current student at the University of Virginia.",
 };
 
 export default function RootLayout({
