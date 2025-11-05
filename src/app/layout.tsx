@@ -1,13 +1,24 @@
-import { Sidebar } from "@/components/Sidebar";
+import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import { Footer } from "@/components/Footer";
+import { TopHeader } from "@/components/TopHeader";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+  ],
 });
 
 export const metadata: Metadata = {
@@ -26,16 +37,16 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.className,
-          "flex antialiased h-screen overflow-hidden bg-gray-100"
+          "antialiased min-h-screen bg-gray-100"
         )}
       >
-        <Sidebar />
-        <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
-          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
+        <TopHeader />
+        <main className="max-w-6xl w-full mx-auto py-6 px-4 md:px-6">
+          <div className="bg-white rounded-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
             {children}
             <Footer />
           </div>
-        </div>
+        </main>
       </body>
     </html>
   );
